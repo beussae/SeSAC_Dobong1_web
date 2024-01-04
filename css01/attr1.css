@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+/* font-family: 'Diphylleia', serif; */
+@font-face {
+    font-family: 'TAEBAEKfont';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+.font-import{
+    font-family: 'Diphylleia', serif;
+}
+
+
+.noonnu{
+    font-family:'TAEBAEKfont'; 
+}
+
+.sentences{
+    font-weight: 700;
+    font-size: 16px;
+    /* font-size: 1rem ;
+    font-size: 1em; */
+
+    text-align: left;
+    text-align: right;
+    text-align: center;
+
+    /* text-decoration: ; */
+    text-decoration: line-throuh;
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: none;
+
+    /* line-height: ; */
+    line-height: 32px;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    /* 색깔 지정 방법 */
+    /* 
+    1.색깔 이름 작성:red, black, pink...
+    2.rhb{-,-.-)-에는 -~255까지의 숫자가 올 수 있음 
+    3.#------ : @c358ab
+        16진수로 이루어진 rgb 값 (0~9와 a,b,c,d,e,f로 이루어진 수
+     */
+
+     color:rgb(red, green, blue)
+     color: #f33333;
+     /* 투명도 조절하는 rgba 함수 */
+     color:rgba(0,0,0,0,5)
+
+}

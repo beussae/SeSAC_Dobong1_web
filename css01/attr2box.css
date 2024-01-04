@@ -1,0 +1,85 @@
+.d-block{
+    display: block;
+    background-color: skyblue;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    margin: 20px;
+}  
+
+.d-inline{
+    display: inline;
+    background-color: pink;
+    width: 1000px;
+    height: 200px;
+    /* padding: 15px;
+    margin: 20px; */
+
+
+}
+
+.d-inline-block{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    border: 1px solid black;
+    padding: 15px;
+    margin: 20px;
+}
+
+.parent{
+    width: 40px;
+
+    /* 
+    width를 300px로 바꾸면 min은 400px 유지, max는 같이 줄어듦
+    width를 500px로 바꾸면 max는 400px 유지, max는  */
+    height: 200px;
+    background-color: red;
+}
+.parent > .min{
+    min-width: 400;
+    height: 100;
+    background-color: orange;
+
+}
+
+.parent > .max{
+
+    max-width: 400;
+    height: 100px;
+    background-color: rebeccapurple;
+
+}
+
+.box {
+    background-color: blue;
+    boder: 1px solid black;
+}
+
+.box-px{
+    width: 50px;
+    height: 50px;
+
+}
+
+.box-view{
+    width: 50vw;
+    height: 50vw;
+}
+
+.box-per{
+    width: 50%;
+    height: 50%;
+}
+
+.rem{
+    font-size: 2rem;
+
+}
+
+.em{
+    font: size 2em;
+}
+
