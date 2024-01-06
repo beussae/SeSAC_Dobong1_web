@@ -1,0 +1,44 @@
+body{
+    
+}
+
+.box {
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    border:1px solid black
+}
+
+/* .background {
+    background: red;
+    /* background: color image repeat position/size; */
+    /* background: linear-gradient( bottom black, white, orange);
+    background: linear-gradient(to bottom black, white, orange);
+ */
+
+
+
+.background-image{
+    background-image: url('./img/small_img.png') ;
+    
+    background-repeat: repeat;
+    background-repeat: repeat-y;
+    background-repeat: repeat-x;
+    background-repeat: no-repeat;
+
+    background-position: center top;
+    background-position: 100px 200px;
+    background-position: 100px;
+    background-position: center;
+
+    background-size: 50px;
+    background-size: 90px 50px;
+    background-size: contain;
+    background-size: cover;
+
+
+
+    background-attachment: fixed;
+}
+    
+    
