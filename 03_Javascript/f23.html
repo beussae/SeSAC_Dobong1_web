@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        .carousel-inner{
+            display: fixed;
+        }
+        .r {
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./image/home.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            home<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+                <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+              </svg>
+          </a>
+        </div>       
+      </nav>
+    <div class="r">
+        <div class="card" style="width: 18rem;">
+            <img src="./image/burger.jpg" class="card-img-top" alt="burger">
+            <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://wtable.co.kr/recipes/cz1BgtfhVhQCz9j3zuywXJU2" class="btn btn-primary">Go somewhere</a>
+            </div>        
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./image/p.jpg" class="card-img-top" alt="p">
+            <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://www.10000recipe.com/recipe/6829901" class="btn btn-primary">Go somewhere</a>
+            </div>        
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="./image/coke.jpg" class="card-img-top" alt="burger">
+            <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://m.blog.naver.com/miny0723/221594955876" class="btn btn-primary">Go somewhere</a>
+            </div>        
+        </div>
+    </div>
+    
+        <br />
+        <br />
+    <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+            <h5>AD</h5>
+            
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <a href="https://www.11st.co.kr/products/5641014813?service_id=pcdn&utm_term=&utm_campaign=%B4%D9%B3%AA%BF%CDpc_%B0%A1%B0%DD%BA%F1%B1%B3%B1%E2%BA%BB&utm_source=%B4%D9%B3%AA%BF%CD_PC_PCS&utm_medium=%B0%A1%B0%DD%BA%F1%B1%B3">
+                        <img src="./image/msi.jpg" class="d-block w-10" alt="msi">
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                    <h5>Msi cyborg 15 A12VE-i5 RAM 8GB추가</h5>
+                    <p>가격: 1,379,000 ₩</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <a href="http://itempage3.auction.co.kr/DetailView.aspx?ItemNo=D236977116&frm3=V2">
+                    <img src="./image/제우스랩.jpg" class="d-block w-10" alt="zeusLab">    
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                <h5>제우스랩 p16k</h5>
+                <p>가격: 216,120 ₩</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="https://www.coupang.com/vp/products/25271683?itemId=98239783&vendorItemId=3179136995&q=wd+2tb&itemsCount=36&searchId=ee1e75c35ff54213aa735536e7f75a82&rank=3&isAddedCart=">
+                    <img src="./image/WD.jpg" class="d-block w-10" alt="WD">
+                </a>
+                <div class="carousel-caption d-none d-md-block">
+                <h5>WD 외장하드 2TB</h5>
+                <p>가격: 104,900 ₩</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</body>
+</html>

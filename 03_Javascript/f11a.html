@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html 내용 변경</title>
+</head>
+<body>
+    <div>민트 초코는 <span>맛있다 >_<</span></div>
+
+    <script>
+        // const div = document.querySelector('div'); 
+        const div = document.getElementsByTagName('div')[0];
+        // const span = document.querySelector('span'); 
+        const span = document.getElementsByTagName('span')[0];
+
+        span.textContent = '맛없다 ㅡㅡ;;'; 
+        // span.innerText = '맛없다ㅡㅡ;;';
+        span.style.color = 'red';
+        /* span.style = 'font-weight: 700' <-이렇게 하면 컬러가 없어짐
+             스타일이라는 하나의 속성에 컬러도 있고 fontweight 도 있기 때문 
+            span.style = 이렇게 할꺼면 '' 안에 컬러도 모두 넣기*/
+        
+        span.style.fontWeight = '700';
+
+    </script>
+  </body>
+</html>
