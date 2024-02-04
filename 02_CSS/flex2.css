@@ -1,0 +1,51 @@
+.container{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background: #3333;
+    display: flex;
+    /* flex-wrap */
+    /* flex-wrap: nowrap; */
+    /* flex-wrap: wrap; */
+}
+.item1{
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+.item2{
+    width: 100px;
+    height: 100px;
+    background: green;
+}
+.item3{
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+
+.item4{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+.item5{
+    width: 100px;
+    height: 100px;
+    background: pink;
+}
+.item6{
+    width: 100px;
+    height: 100px;
+    background: coral;
+}
+.item7{
+    width: 100px;
+    height: 100px;
+    background: darkorange;
+}
+.item8{
+    width: 100px;
+    height: 100px;
+    background: black;
+}

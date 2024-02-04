@@ -1,0 +1,16 @@
+p{
+    color: red;
+    background-color: white;
+}
+@import url(./tesst2.css);
+span{
+    color: blue;
+    background-color: orange;
+
+}
+
+h3{
+    color: white;
+    background-color: black;
+
+}

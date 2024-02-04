@@ -1,0 +1,17 @@
+.lorem{
+    position: relative;
+    animation: lorem 2s ease 0s infinite alternate;
+    
+}
+
+@keyframes lorem {
+    0%{
+        left: 100%;
+    }
+
+    100%{
+        left: 0%;
+    }
+    
+    
+}

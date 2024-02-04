@@ -1,0 +1,28 @@
+.container{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border:1px solid black;
+}
+
+.box1:hover{
+    width: 200px;
+    height: 100px;
+    transition: 1s;
+}
+
+.box2:hover{
+    transform: skewX(-45deg);
+    transition: 1s;
+}
+
+.box3:hover{
+    transform: translate(400px) rotate(45deg) ;
+    transition: 1s;
+    border-radius: 50%;
+    
+}
+
+.box4:hover{
+    
+}

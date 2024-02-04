@@ -1,0 +1,10 @@
+.border{
+    border-width: ;
+    border-style: ;
+    border-color: aqua;
+    border-right: 10px;
+}
+
+.rounded{
+    border-radius: 0 10px;
+}

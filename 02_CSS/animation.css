@@ -1,0 +1,41 @@
+.contain{
+    width: 1000px;
+    height: 700px;
+    background-color: green;
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: yellow;
+    position: absolute;
+    animation: bb 8s ease 0s infinite;
+}
+
+@keyframes bb {
+    0%, 100%{
+        top: 0;
+        left: 0;
+    }
+
+    25%{
+        left: 900px;
+        top: 0;
+
+    }
+    50%{
+        top: 600px;
+        left: 900px;
+    }
+
+
+    75%{
+        left: 0;
+        top: 600px;
+         
+    }
+   
+    
+    
+    
+}

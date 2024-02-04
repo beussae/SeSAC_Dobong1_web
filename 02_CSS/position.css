@@ -1,0 +1,89 @@
+.container{
+    width: 500px;
+    height: 500px;
+    background-image: url(./img/grass.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    background-color: rgb(201, 240, 255);
+    position: relative;
+    z-index: 2;
+  
+    
+}
+
+.container>.items{
+    border-radius: 50%;
+    
+}
+
+.item1{
+    width: 30px;
+    height: 30px;
+    background: red;
+    position: relative;
+    top: 170px;
+    left:105px;
+    z-index: 8;
+
+}
+.item2{
+    width: 100px;
+    height: 100px;
+    background: green;
+    position: relative;
+    top: 150px;
+    left:70px;
+}
+.item3{
+    width: 60px;
+    height: 60px;
+    background: blue;
+    position: relative;
+    top: 160px;
+    left:10px;
+}
+
+.item4{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    position: relative;
+    top: 210px;
+    right: 10px;
+}
+.item5{
+    width: 100px;
+    height: 100px;
+    background: pink;
+    position: relative;
+    top: 260px;
+    right: 50px;
+}
+.item6{
+    width: 100px;
+    height: 100px;
+    background: coral;
+    position: relative;
+    top: 300px;
+    right: 80px;
+}
+.item7{
+    width: 100px;
+    height: 100px;
+    background: darkorange;
+    position: relative;
+    top: 350px;
+    right: 120px;
+    z-index: 1;
+}
+
+.item8{
+    width: 100px;
+    height: 100px;
+    background: black;
+    position: relative;
+    top: 380px;
+    right: 150px;
+    z-index: 3;
+}
