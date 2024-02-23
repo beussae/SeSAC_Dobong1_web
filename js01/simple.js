@@ -1,1 +1,0 @@
-console.log(typeof 10 + " ins't" + ' data type.')

@@ -19,14 +19,14 @@ select * from visitor;
 ############[DCL]###############
 
 -- ------새로운 user 만들기1
-CREATE USER 'sesac'@'%' IDENTIFIED BY '1234';
+CREATE USER 'sesac'@'%' IDENTIFIED BY 'yoon1593!!';
 
 ALTER USER 'sesac'@'%' IDENTIFIED WITH mysql_native_password BY '1234';
 -- 비밀번호 바꾸고 싶다면!
 
 
 -- ------새로운 user만들기2
-CREATE USER 'sesac'@'%' IDENTIFIED WITH mysql_native_password BY'1234';
+CREATE USER 'sesac'@'%' IDENTIFIED WITH mysql_native_password BY'yoon1593!!';
 
 GRANT ALL PRIVILEGES ON *.* TO 'sesac'@'%' WITH GRANT OPTION;
 -- 모든 DB에 접근 가능하도록, sesac 계정에 DB접근 권한을 부여
