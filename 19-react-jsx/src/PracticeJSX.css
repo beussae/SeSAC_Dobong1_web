@@ -1,0 +1,9 @@
+.Hello {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.Title {
+  background-color: rgb(183, 102, 102);
+  color: brown;
+}
