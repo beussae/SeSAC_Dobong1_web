@@ -16,6 +16,10 @@ const indexRouter = require("./routes");
 app.use("/", indexRouter);
 // const indexRouter = require('./routes/index')
 
+// [추가] /user
+const userRouter = require("./routes/user");
+app.use("/user", userRouter);
+
 // 404 error
 app.get("*", (req, res) => {
   res.render("404");
