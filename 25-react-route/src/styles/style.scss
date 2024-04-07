@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+}
+
+// header
+header {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  .menu-item {
+    margin: 0 8px;
+  }
+}
+
+.MainPage {
+  background-color: darkorange;
+  min-height: 100vh;
+  &.darak {
+    background-color: #333;
+    color: white;
+  }
+}
+
+.ProductPage {
+  background-color: darkgreen;
+  height: 100vh;
+  .ProductList {
+    .ProductItem {
+      text-decoration: none;
+      color: red;
+      &:hover {
+        color: black;
+        font-weight: 700;
+      }
+      ul {
+        margin: 30px auto;
+        width: 80vw;
+        background-color: antiquewhite;
+      }
+    }
+  }
+}
