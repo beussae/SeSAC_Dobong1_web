@@ -1,38 +1,27 @@
-const Visitor = function (Sequelize, DataTypes) {
-  // Sequelize 는 model/index.js 의 sequelize
-  // Datatypes 는 mode/index.js의 Sequelize
+"use strict";
 
-  //   const model = Sequelize.define(params1, params2, params3);
+const Sequelize = require("sequelize");
 
-  //   params1: 모델 이름 설정
-  //   params2: 컬럼을 정의, (CREATE TABLE 제약조건)
-  //   params3: 모델 옵션
+const config = require(__dirname + "/../config/config.json")["development"];
+const db = {};
 
-  const model = Sequelize.define(
-    "Visitor",
-    {
-      id: {
-        type: DataTypes.INTEGER,
-        primaryKey: true,
-        autoIncrement: true,
-        allowNull: false,
-      },
-      name: {
-        type: DataTypes.STRING(10),
-        allowNull: false,
-      },
-      comment: {
-        type: DataTypes.TEXT("medium"),
-      },
-    },
-    {
-      tableName: "visitor",
-      timestamps: false,
-      freezeTableName: true,
-    }
-  );
+console.log("config >> ", config);
 
-  return model;
-};
+// const sequelize = new Sequelize(DB명, 사용자명, 비밀번호, config 정보 전체)
+const sequelize = new Sequelize(
+  config.database,
+  config.username,
+  config.password,
+  config
+);
 
-module.exports = Visitor;
+db.sequelize = sequelize; //db = {sequelize:sequelize}
+db.Sequelize = Sequelize; //db = {sequelize:sequelize, Sequelize:Sequelize}
+
+// 모델이 여러개 있으면,
+// 여러 개의 모델을 require 한 이후에 sequelize, Sequelize를 전달해야 함
+db.Visitor = require("./Visitor")(sequelize, Sequelize);
+// [추가]
+db.User = require("./User")(sequelize, Sequelize);
+module.exports = db;
+// db라는 변수를 내보내기 하는 중
