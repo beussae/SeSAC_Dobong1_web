@@ -1,5 +1,5 @@
 import { ListContainer } from "./components/ListContainer";
-import "./styles/style.scss";
+import "./style/style.scss";
 function App() {
   return (
     <main>
