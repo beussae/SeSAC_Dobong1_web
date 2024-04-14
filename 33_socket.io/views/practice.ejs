@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+    <button>Hello</button>
+    <button>Study</button>
+    <button>Bye</button>
+    <div id="response"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const socket = io();
+
+        document.querySelectorAll("button").forEach((button) => {
+          button.onclick = function () {
+            const message = this.textContent;
+            socket.emit("보낸 메세지", message, (response) => {
+              document.getElementById("response").textContent =
+                response;
+            });
+          };
+        });
+
+        socket.on("connect", () => {
+          console.log("서버에 연결됨");
+        });
+      });
+    </script>
+  </body>
+</html>
